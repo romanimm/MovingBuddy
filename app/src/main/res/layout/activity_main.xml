@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              tools:context=".MainActivity"
+
+              android:orientation="vertical">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:id="@+id/select_buddy_layout" android:gravity="center_horizontal"
+            >
+        <ImageButton
+                android:layout_width="@dimen/main_iconSize"
+                android:layout_height="@dimen/main_iconSize"
+                android:id="@+id/imageButton_pickImage"
+                android:adjustViewBounds="false" android:contentDescription="@string/main_imageButton_pick_imageText"
+                android:clickable="true"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false" android:background="@android:drawable/ic_menu_gallery"
+                android:padding="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/main_linearLayout_settings">
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_checkBox_userInput"
+                android:id="@+id/main_checkBox_userInput" android:checked="false"/>
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_checkBox_sensorInput"
+                android:id="@+id/main_checkBox_sensorInput" android:checked="false" android:singleLine="true"/>
+        <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonServiceEnabled" android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

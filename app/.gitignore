@@ -1,0 +1,6 @@
+/build
+app.iml
+**.apk
+**.gradle
+manifest-merger-release-report.txt
+proguard-rules.pro

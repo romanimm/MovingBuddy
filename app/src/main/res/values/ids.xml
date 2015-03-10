@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="service_unbound_text" type="id">service is not bound!</item>
+</resources>
